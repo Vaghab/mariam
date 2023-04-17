@@ -10,6 +10,7 @@ const GalleryClassName = "gallery"
   , GalleryNavLeftClassName = "gallery-nav-left"
   , GalleryNavRightClassName = "gallery-nav-right"
   , GalleryNavDisabledClassName = "gallery-nav-disabled";
+  
 
 interface IOptions {
     padding?: number;
