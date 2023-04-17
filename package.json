@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "build": "gulp build",
+    "start-dev": "gulp dev"
   },
   "author": "",
   "license": "ISC",
@@ -15,11 +16,11 @@
     "gulp-cli": "^2.3.0",
     "gulp-file-include": "^2.3.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.59.3"
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.59.3",
+    "typescript": "^5.0.4"
   },
   "dependencies": {
-    "gulp-typescript": "^6.0.0-alpha.1",
-    "hamburgers": "^1.2.1",
-    "typescript": "^5.0.4"
+    "hamburgers": "^1.2.1"
   }
 }
