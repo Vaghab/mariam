@@ -1,0 +1,213 @@
+.main {
+    width: 100%;
+    @media(min-width: 321px) {}
+
+    @media(min-width: 425px) {}
+
+    @media(min-width: 768px) {}
+
+    @media(min-width: 1024px) {}
+
+    @media(min-width: 1280px) {}
+
+}
+
+.block{
+    width: 100%;
+    display: block;
+
+    @media(max-width: 1024px) {
+        height: 180px;
+    }
+    @media(max-width: 768px) {
+        height: 120px;
+
+    }
+    @media(max-width: 425px) {
+    }
+    @media(max-width: 375px) {
+        height: 100px;
+    }
+    @media(max-width: 320px) {
+        height: 90px;
+    }
+
+    &__inner{
+        font-family: "Scandal Regular";
+        font-size: $blockNameFF;
+        text-align: center;
+        transform: translateY(-20px);
+        opacity: 50%;
+        padding: 30px;
+
+        @media(max-width: 1024px) {
+            font-size: 120px;
+        }
+        @media(max-width: 768px) {
+            font-size: 74px;
+        }
+        @media(max-width: 425px) {
+            font-size: 66px;
+        }
+        @media(max-width: 375px) {
+            font-size: 60px;
+        }
+        @media(max-width: 320px) {
+            font-size: 50px;
+        }
+    }
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: beige;
+    overflow: hidden;
+
+    @media(max-width: 1024px) {
+        // width: 150px;
+    }
+    @media(max-width: 768px) {
+        width: 220px;
+    }
+    @media(max-width: 425px) {
+        margin: 5px;
+        width: 190px;
+        height: 280px;
+    }
+    @media(max-width: 375px) {
+        width: 150px;
+        height: 250px;
+    }
+    @media(max-width: 320px) {
+        width: 150px;
+        height: 250px;
+    }
+
+    &__foto{
+        position: relative;
+        width: 100%;
+        height: 35%;
+        overflow: hidden;
+
+        @media(max-width: 1024px) {
+            
+        }
+        @media(max-width: 768px) {
+            
+        }
+        @media(max-width: 425px) {
+            
+        }
+        @media(max-width: 375px) {
+            
+        }
+        @media(max-width: 320px) {
+            
+        }
+
+    }
+
+    &__foto-img{
+        width: 100%;
+        height: auto;
+        // border-radius: 50%;
+    }
+
+    &__info{
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+
+        @media(max-width: 1440px) {
+            
+        }
+        @media(max-width: 1024px) {
+            
+        }
+        @media(max-width: 768px) {
+            
+        }
+        @media(max-width: 425px) {
+            
+        }
+        @media(max-width: 375px) {
+            
+        }
+        @media(max-width: 320px) {
+            
+        }
+
+    }
+    &__title{
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+
+        @media(max-width: 1440px) {
+        }
+        @media(max-width: 1024px) {
+        }
+        @media(max-width: 768px) {
+        }
+        @media(max-width: 425px) {
+            font-size: 24px;
+        }
+        @media(max-width: 375px) {
+        }
+        @media(max-width: 320px) {
+        }
+
+    }
+    &__text{
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0 10px 0 10px;
+
+        @media(max-width: 1024px) {
+            
+        }
+        @media(max-width: 768px) {
+            
+        }
+        @media(max-width: 425px) {
+            font-size: 10px;
+        }
+        @media(max-width: 375px) {
+            
+        }
+        @media(max-width: 320px) {
+            
+        }
+    }
+
+    &__button{
+        font-size: 16px;
+        color: rgb(35, 25, 25);
+        border-radius: 25px;
+        padding: 5px;
+        margin: 10px;
+
+        @media(max-width: 1024px) {
+        }
+        @media(max-width: 768px) {
+        }
+        @media(max-width: 425px) {
+            font-size: 14px;
+        }
+        @media(max-width: 375px) {
+        }
+        @media(max-width: 320px) {
+        }
+    }
+}

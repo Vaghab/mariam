@@ -1,0 +1,42 @@
+<header class="header">
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            hamburger.addEventListener("click", function() {
+                hamburger.classList.toggle("is-active");
+                let menu = document.querySelector('.header__menu');
+                menu.classList.toggle('is-active')
+            });
+        </script>
+
+    <div class="header__inner container">
+
+        <div class="header__logo" href="#">
+            <img class="header__logo-img" src="../../assets/images/header/logoClear-transformed.png" alt="">
+        </div>
+        
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li class="header__link-wrapper">
+                    <a class="header__link" href="#">CASA</a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a class="header__link" href="#">DE NOSOTROS</a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a class="header__link" href="#">PRODUCTOS</a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a class="header__link" href="#">CONTACTOS</a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a class="header__link" href="#">MONTACTOS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,97 @@
+.intro {
+    width: 100%;
+    padding-top: 70px;
+    // margin-bottom: 20px;
+
+    @media (max-width: 1440px) {
+        // height: 800px;
+    }
+    @media (max-width: 1024px) {
+        // height: 600px;
+    }
+    @media (max-width: 768px) {
+        // height: 400px;
+    }
+    @media (max-width: 425px) {
+        // height: 280px;
+    }
+
+    &__wrapper{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__inner{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        color: $intro-text-color;
+        // font-family: 'rey';
+        // font-family: 'DaVinci Regular';
+        // font-family: 'MisterK Regular';
+        font-family: 'Scandal Regular';
+        font-size: 55px;
+        line-height: 1.5;
+        // margin: 250px 0 0 0;
+        // padding: 20px 20px 50px 20px;
+        // filter: drop-shadow(1px 1px 7px black);
+        z-index: 2;
+
+        @media (max-width: 1024px) {
+            font-size: 40px;
+            // margin: calc(250px*.71) 0 0 0;
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+            // margin: calc(250px*.6) 0 0 0;
+        }
+        @media (max-width: 425px) {
+            // background-position: 74% center;
+            font-size: 15px;
+            // margin: calc(250px*.6) 0 0 0;
+        }
+        @media (max-width: 325px) {
+            // background-position: 74% center;
+            font-size: 14px;
+            // width: 100%;
+            // margin: calc(250px*.6) 0 0 0;
+        }
+    }
+
+    &__img{
+        height: 100%;
+        width: 100%;
+        // background-image: url('../../assets/images/intro/1681496485945.jpg');
+        transform: scaleX(-1);
+    }
+
+
+    &__text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        left: 0;
+        top: 0;
+
+        @media (max-width: 1024px) {
+
+        }
+        @media (max-width: 768px) {
+
+        }
+        @media (max-width: 425px) {
+            padding: 20px;
+        }
+        @media (max-width: 325px) {
+            
+        }
+    }
+}

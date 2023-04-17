@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'Torres'; 
+	src:
+	url('../assets/Fonts/Torres-Fonts/Torres-Regular/Torres\ regular.otf'),
+	url('../assets/Fonts/Torres-Fonts/Torres-Regular/Torres\ regular.ttf'),
+	url('../assets/Fonts/Torres-Fonts/Torres-Regular/Torres\ regular.woff');
+}
+@font-face {
+	font-family: 'Rey'; 
+	src:
+	url('../assets/Fonts/Reey/Reey-Regular.otf');
+}
+@font-face {
+	font-family: 'DaVinci Regular'; 
+	src:
+	url('../assets/Fonts/ofont.ru_PF\ DaVinci\ Script\ Pro\ Inked.ttf');
+}
+@font-face {
+	font-family: 'MisterK Regular'; 
+	src:
+	url('../assets/Fonts/ofont.ru_MisterK\ .ttf');
+}
+@font-face {
+	font-family: 'Scandal Regular'; 
+	src:
+	url('../assets/Fonts/ofont.ru_PF\ Scandal\ Pro\ Black.ttf');
+}
+
+$navColor: rgb(255, 255, 255);
+$intro-text-color: #626154;
+$darkColor: rgb(23, 21, 21);
+$navFontSize: 70px;
+$blockNameFF: 180px;
+
+$health-main-color: #c9e4c9;
+$beauty-main-color: #ff9999;
+$care-main-color: #669999;
+
+:root {
+	--h-h: 1080px
+}

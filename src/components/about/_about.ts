@@ -1,0 +1,1 @@
+const galleryOfCert = new Gallery(document.getElementById("galleryCert"),{padding:10, dots: true, arrows: true, amountVisibles: 3});
