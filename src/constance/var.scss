@@ -1,24 +1,24 @@
 @font-face {
-    font-family: "Torres";
-    src: url("../assets/Fonts/Torres-Fonts/Torres-Regular/Torres\ regular.otf"),
-        url("../assets/Fonts/Torres-Fonts/Torres-Regular/Torres\ regular.ttf"),
-        url("../assets/Fonts/Torres-Fonts/Torres-Regular/Torres\ regular.woff");
+  font-family: "Torres";
+  src: url("../assets/Fonts/Torres-Fonts/Torres-Regular/Torres\ regular.otf"),
+    url("../assets/Fonts/Torres-Fonts/Torres-Regular/Torres\ regular.ttf"),
+    url("../assets/Fonts/Torres-Fonts/Torres-Regular/Torres\ regular.woff");
 }
 @font-face {
-    font-family: "Rey";
-    src: url("../assets/Fonts/Reey/Reey-Regular.otf");
+  font-family: "Rey";
+  src: url("../assets/Fonts/Reey/Reey-Regular.otf");
 }
 @font-face {
-    font-family: "DaVinci Regular";
-    src: url("../assets/Fonts/ofont.ru_PF\ DaVinci\ Script\ Pro\ Inked.ttf");
+  font-family: "DaVinci Regular";
+  src: url("../assets/Fonts/ofont.ru_PF\ DaVinci\ Script\ Pro\ Inked.ttf");
 }
 @font-face {
-    font-family: "MisterK Regular";
-    src: url("../assets/Fonts/ofont.ru_MisterK\ .ttf");
+  font-family: "MisterK Regular";
+  src: url("../assets/Fonts/ofont.ru_MisterK\ .ttf");
 }
 @font-face {
-    font-family: "Scandal Regular";
-    src: url("../assets/Fonts/ofont.ru_PF\ Scandal\ Pro\ Black.ttf");
+  font-family: "Scandal Regular";
+  src: url("../assets/Fonts/ofont.ru_PF\ Scandal\ Pro\ Black.ttf");
 }
 
 $navColor: rgb(255, 255, 255);
@@ -32,18 +32,64 @@ $beauty-main-color: #ff9999;
 $care-main-color: #669999;
 
 :root {
-    --h-h: 1080px;
+  --h-h: 1080px;
 }
 
 @mixin mediaPC($key, $value) {
-    #{$key}: $value;
-    @media (max-width: 1440px) {
-        #{$key}: $value * 0.75;
-    }
-    @media (max-width: 1024px) {
-        #{$key}: $value * 0.53;
-    }
-    @media (max-width: 768px) {
-        #{$key}: $value * 0.4;
-    }
+  #{$key}: $value;
+  @media (max-width: 1440px) {
+    #{$key}: $value * 0.75;
+  }
+  @media (max-width: 1200px) {
+    #{$key}: $value * 0.62;
+  }
+  @media (max-width: 1024px) {
+    #{$key}: $value * 0.53;
+  }
+  @media (max-width: 768px) {
+    #{$key}: $value * 0.4;
+  }
+}
+
+@mixin mediaMob($key, $value) {
+  @media (max-width: 425px) {
+    #{$key}: $value * 0.75;
+  }
+  @media (max-width: 390px) {
+    #{$key}: $value * 0.62;
+  }
+  @media (max-width: 375px) {
+    #{$key}: $value * 0.53;
+  }
+  @media (max-width: 320px) {
+    #{$key}: $value * 0.4;
+  }
+}
+
+@mixin mediaAll($key, $value) {
+  #{$key}: $value;
+  @media (max-width: 1440px) {
+    #{$key}: $value * 0.75;
+  }
+  @media (max-width: 1200px) {
+    #{$key}: $value * 0.62;
+  }
+  @media (max-width: 1024px) {
+    #{$key}: $value * 0.53;
+  }
+  @media (max-width: 768px) {
+    #{$key}: $value * 0.4;
+  }
+  @media (max-width: 425px) {
+    #{$key}: $value * 0.22;
+  }
+  @media (max-width: 390px) {
+    #{$key}: $value * 0.2;
+  }
+  @media (max-width: 375px) {
+    #{$key}: $value * 0.19;
+  }
+  @media (max-width: 320px) {
+    #{$key}: $value * 0.7;
+  }
 }
