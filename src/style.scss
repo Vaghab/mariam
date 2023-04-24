@@ -1,85 +1,66 @@
-@import './constance/var.scss';
-@import './components/main/main';
-@import './lib/gallery/gallery.scss';
-@import './components/header/_header.scss';
-@import './components/elems/button/button';
-@import './components/intro/intro';
-@import './components/footer/footer';
-@import './components/elems/burger__menu/hamburgers.min';
-@import './components/block1/block1.scss';
-@import './components/service/service.scss';
-@import './components/block2/block2.scss';
-@import './components/products/products.scss';
-@import './components/block3/block3.scss';
-@import './components/about/_about.scss';
+@import "./constance/var.scss";
+@import "./components/main/main";
+@import "./lib/gallery/gallery.scss";
+@import "./components/header/_header.scss";
+@import "./components/elems/button/button";
+@import "./components/intro/intro";
+@import "./components/footer/footer";
+@import "./components/elems/burger__menu/hamburgers.min";
+@import "./components/block1/block1.scss";
+@import "./components/service/service.scss";
+@import "./components/block2/block2.scss";
+@import "./components/products/products.scss";
+@import "./components/block3/block3.scss";
+@import "./components/about/_about.scss";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    // background-color: aliceblue;
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  // background-color: aliceblue;
 }
 
 button {
-    box-shadow: none;
-    border: none;
+  box-shadow: none;
+  border: none;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    transition: all linear 0.3s;
+  text-decoration: none;
+  color: white;
+  transition: all linear 0.3s;
 
-    &:hover {
-        color: $navColor;
-        text-decoration: solid 1px #fffff0;
-    }
-    &:after{
-        content: '';
+  &:hover {
+    color: $navColor;
+    text-decoration: solid 1px #fffff0;
+  }
+  &:after {
+    content: "";
     display: block;
     height: 2px; /* Высота линии */
     background: $navColor; /* Цвет линии */
     width: 0px; /* Ширина линии до наведения */
     margin: 0px auto 0; /* Отступ с боков по центру и сверху */
-	transition: 1s;
-    }
-    &:hover:after{
-        width: 100%; /* Ширина линии при наведении */
-	    transition: ease-out .4s;
-    }
+    transition: 1s;
+  }
+  &:hover:after {
+    width: 100%; /* Ширина линии при наведении */
+    transition: ease-out 0.4s;
+  }
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .container {
-    max-width: 1280px;
-    margin: 0 auto;
-
-    @media(max-width: 1024px) {
-        width: 976px;
-    }
-    @media(max-width: 768px) {
-        width: 740px;
-    }
-    @media(max-width: 425px) {
-        // flex-direction: column;
-        width: 405px;
-    }
-    @media(max-width: 375px) {
-        // flex-direction: column;
-        width: 355px;
-    }
-    @media(max-width: 320px) {
-        // flex-direction: column;
-        width: 320px;
-    }
+  margin: 0 auto;
+  @include mediaAll(max-width, 1700px);
 }
