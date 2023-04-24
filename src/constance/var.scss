@@ -90,6 +90,6 @@ $care-main-color: #669999;
     #{$key}: $value * 0.19;
   }
   @media (max-width: 320px) {
-    #{$key}: $value * 0.7;
+    #{$key}: $value * 0.17;
   }
 }
