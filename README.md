@@ -38,3 +38,7 @@ haben
 Уход: костетика для кожи, крема, маски и т.д.
 
 la foto <img>, el titulo <h2>, la info <p>, el button <button>, un popup universal <div>
+
+Escribir el codigo para el bloque de productos usando el clase Card.
+Consiguir la informacion sobre los productos y servicios y meterlos en un arreglo.
+Y luego, mejorar el estilo del(de el) card.

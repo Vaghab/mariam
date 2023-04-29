@@ -1,213 +1,158 @@
 .main {
-    width: 100%;
-    @media(min-width: 321px) {}
+  width: 100%;
+  @media (min-width: 321px) {
+  }
 
-    @media(min-width: 425px) {}
+  @media (min-width: 425px) {
+  }
 
-    @media(min-width: 768px) {}
+  @media (min-width: 768px) {
+  }
 
-    @media(min-width: 1024px) {}
+  @media (min-width: 1024px) {
+  }
 
-    @media(min-width: 1280px) {}
-
+  @media (min-width: 1280px) {
+  }
 }
 
-.block{
-    width: 100%;
-    display: block;
+.block {
+  width: 100%;
+  display: block;
 
-    @media(max-width: 1024px) {
-        height: 180px;
-    }
-    @media(max-width: 768px) {
-        height: 120px;
+  @media (max-width: 1024px) {
+    height: 180px;
+  }
+  @media (max-width: 768px) {
+    height: 120px;
+  }
+  @media (max-width: 425px) {
+  }
+  @media (max-width: 375px) {
+    height: 100px;
+  }
+  @media (max-width: 320px) {
+    height: 90px;
+  }
 
-    }
-    @media(max-width: 425px) {
-    }
-    @media(max-width: 375px) {
-        height: 100px;
-    }
-    @media(max-width: 320px) {
-        height: 90px;
-    }
+  &__inner {
+    font-family: "Scandal Regular";
+    font-size: $blockNameFF;
+    text-align: center;
+    transform: translateY(-20px);
+    opacity: 50%;
+    padding: 30px;
 
-    &__inner{
-        font-family: "Scandal Regular";
-        font-size: $blockNameFF;
-        text-align: center;
-        transform: translateY(-20px);
-        opacity: 50%;
-        padding: 30px;
-
-        @media(max-width: 1024px) {
-            font-size: 120px;
-        }
-        @media(max-width: 768px) {
-            font-size: 74px;
-        }
-        @media(max-width: 425px) {
-            font-size: 66px;
-        }
-        @media(max-width: 375px) {
-            font-size: 60px;
-        }
-        @media(max-width: 320px) {
-            font-size: 50px;
-        }
+    @media (max-width: 1024px) {
+      font-size: 120px;
     }
+    @media (max-width: 768px) {
+      font-size: 74px;
+    }
+    @media (max-width: 425px) {
+      font-size: 66px;
+    }
+    @media (max-width: 375px) {
+      font-size: 60px;
+    }
+    @media (max-width: 320px) {
+      font-size: 50px;
+    }
+  }
 }
 
 .card {
-    width: 250px;
-    height: 400px;
+  display: flex;
+  @include mediaPC(width, 350px);
+  @include mediaMob(width, 350px);
+  @include mediaPC(height, 500px);
+  @include mediaMob(height, 500px);
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: beige;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @include mediaPC(padding-top, 10px);
+  @include mediaMob(padding-top, 10px);
+
+  //   &__foto {
+  //     position: relative;
+  //     width: 100%;
+  //     height: 35%;
+  //     overflow: hidden;
+  //   }
+
+  //   &__foto-img {
+  //     width: 100%;
+  //     height: auto;
+  //   }
+
+  &__info {
+    width: 100%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    @include mediaPC(height, 220px);
+    @include mediaMob(height, 220px);
+    text-align: center;
+    @include mediaPC(font-size, 35px);
+    @include mediaMob(font-size, 35px);
+    @include mediaPC(padding, 15px);
+    @include mediaMob(padding, 15px);
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    background-color: beige;
+  }
+  &__text {
+    width: 100%;
+    height: 100%;
+    @include mediaPC(font-size, 20px);
+    @include mediaMob(font-size, 20px);
+    font-weight: 400;
     overflow: hidden;
+    text-overflow: ellipsis;
+    @include mediaPC(padding, 20px);
+    @include mediaMob(padding, 20px);
+  }
+  &__price {
+    font-weight: bold;
+    @include mediaPC(font-size, 25px);
+    @include mediaMob(font-size, 25px);
+    @include mediaPC(margin, 15px);
+    @include mediaMob(margin, 15px);
+    align-self: center;
+  }
 
-    @media(max-width: 1024px) {
-        // width: 150px;
-    }
-    @media(max-width: 768px) {
-        width: 220px;
-    }
-    @media(max-width: 425px) {
-        margin: 5px;
-        width: 190px;
-        height: 280px;
-    }
-    @media(max-width: 375px) {
-        width: 150px;
-        height: 250px;
-    }
-    @media(max-width: 320px) {
-        width: 150px;
-        height: 250px;
-    }
+  &__button {
+    font-family: "montserrat";
+    font-weight: bold;
+    @include mediaPC(font-size, 20px);
+    @include mediaMob(font-size, 20px);
+    color: rgb(35, 25, 25);
+    border-radius: 25px;
+    @include mediaPC(padding, 13px);
+    @include mediaMob(padding, 13px);
+    @include mediaPC(margin, 20px);
+    @include mediaMob(margin, 20px);
+    @include mediaPC(width, 200px);
+    @include mediaMob(width, 200px);
+    align-self: center;
+  }
+}
 
-    &__foto{
-        position: relative;
-        width: 100%;
-        height: 35%;
-        overflow: hidden;
+.card {
+  @include mediaPC(margin, 10px);
+  @include mediaMob(margin, 10px);
+}
 
-        @media(max-width: 1024px) {
-            
-        }
-        @media(max-width: 768px) {
-            
-        }
-        @media(max-width: 425px) {
-            
-        }
-        @media(max-width: 375px) {
-            
-        }
-        @media(max-width: 320px) {
-            
-        }
+.product .card {
+  background-color: rgb(245, 220, 220);
 
-    }
-
-    &__foto-img{
-        width: 100%;
-        height: auto;
-        // border-radius: 50%;
-    }
-
-    &__info{
-        width: 100%;
-        height: 65%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-content: center;
-
-        @media(max-width: 1440px) {
-            
-        }
-        @media(max-width: 1024px) {
-            
-        }
-        @media(max-width: 768px) {
-            
-        }
-        @media(max-width: 425px) {
-            
-        }
-        @media(max-width: 375px) {
-            
-        }
-        @media(max-width: 320px) {
-            
-        }
-
-    }
-    &__title{
-        text-align: center;
-        font-size: 30px;
-        padding: 5px;
-
-        @media(max-width: 1440px) {
-        }
-        @media(max-width: 1024px) {
-        }
-        @media(max-width: 768px) {
-        }
-        @media(max-width: 425px) {
-            font-size: 24px;
-        }
-        @media(max-width: 375px) {
-        }
-        @media(max-width: 320px) {
-        }
-
-    }
-    &__text{
-        width: 100%;
-        height: 100%;
-        font-size: 16px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding: 0 10px 0 10px;
-
-        @media(max-width: 1024px) {
-            
-        }
-        @media(max-width: 768px) {
-            
-        }
-        @media(max-width: 425px) {
-            font-size: 10px;
-        }
-        @media(max-width: 375px) {
-            
-        }
-        @media(max-width: 320px) {
-            
-        }
-    }
-
-    &__button{
-        font-size: 16px;
-        color: rgb(35, 25, 25);
-        border-radius: 25px;
-        padding: 5px;
-        margin: 10px;
-
-        @media(max-width: 1024px) {
-        }
-        @media(max-width: 768px) {
-        }
-        @media(max-width: 425px) {
-            font-size: 14px;
-        }
-        @media(max-width: 375px) {
-        }
-        @media(max-width: 320px) {
-        }
-    }
+  .card__button {
+    background-color: rgb(244 165 165);
+  }
 }

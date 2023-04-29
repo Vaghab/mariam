@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: rgb(35, 25, 25);
   z-index: 10;
@@ -57,19 +57,26 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    @include mediaPC(padding-left, 500px);
 
     @media (max-width: 425px) {
       flex-direction: column;
+      padding-left: 0px;
     }
   }
 
   &__link-wrapper {
     @include mediaAll(padding, 5px);
+    @include mediaPC(margin-right, 50px);
+    @media (max-width: 425px) {
+      margin-right: 0px;
+    }
   }
 
   &__link {
     @include mediaPC(font-size, 20px);
     @include mediaMob(font-size, 20px);
+    font-weight: 600;
     color: $navColor;
   }
 }

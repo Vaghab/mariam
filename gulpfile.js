@@ -30,7 +30,7 @@ function css() {
 }
 
 function tscript() {
-    return src(['src/**/*.ts', '!src/components/**/*.ts', '!src/lib/gallery/**/*.ts'])
+    return src(['src/**/*.ts', '!src/components/**/*.ts', '!src/lib/gallery/**/*.ts', '!src/services/**/*.ts'])
         .pipe(fileinclude())
         // .pipe(browserify({ transform: [babelify.configure({ presets: ['@babel/preset-env'] })] }))
         // .pipe(uglify({

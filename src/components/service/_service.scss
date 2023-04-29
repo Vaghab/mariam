@@ -1,56 +1,23 @@
-.service{
-    display: flex;
-    align-items: center;
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "montserrat";
+
+  &__inner {
+    display: grid;
     justify-content: center;
-    width: 100%;
-    font-family: 'montserrat';
-
-    // @media(max-width: 1024px) {
-    //     height: calc(600px*0.71);
-    // }
-    // @media(max-width: 768px) {
-    //     height: calc(600px*0.53);
-    // }
-    // @media(max-width: 425px) {
-    //     flex-direction: column;
-    //     align-content: center;
-    //     height: calc(1200px*.6);
-    // }
-    // @media(max-width: 375px) {
-    //     flex-direction: column;
-    //     align-content: center;
-    //     height: calc(1200px*.5);
-    // }
-    // @media(max-width: 320px) {
-    //     flex-direction: column;
-    //     align-content: center;
-    //     height: calc(1200px*.44);
-    // }
-
-    &__inner{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: auto auto auto;
-        grid-gap: 10px;
-
-        padding: 20px 0 20px 0;
-
-        @media(max-width: 1024px) {
-        }
-        @media(max-width: 768px) {
-        }
-        @media(max-width: 425px) {
-            grid-gap: 0;
-            grid-template-columns: auto auto;
-        }
-        @media(max-width: 375px) {
-        }
-        @media(max-width: 320px) {
-        }
-
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 20px 0 20px 0;
+    @media (max-width: 425px) {
+      grid-gap: 0;
+      grid-template-columns: auto auto;
     }
+  }
 
-    &__btn {
-        background-color: $health-main-color;
-    }
+  &__btn {
+    background-color: $health-main-color;
+  }
 }
