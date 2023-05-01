@@ -22,12 +22,40 @@ para las personas: un/una (unos/unas los/las) -> le (les)
 ir - fui, fuiste, fue, fuisteis, fuimos, fueron
 ser - lo mismo (igual)
 
-he
-has
-ha
-habeis
-habemos
-haben
+-ar => ado
+-er => ido
+-ir => ido
+
+por ejemplo: comer - comido, trabajar - trabajado, vivir - vivido
+
+# yo he trabajado (Pretérito perfecto)
+
+-ar => aba
+-er => ia
+-ir => ia
+
+por ejemplo: comer - comia, trabajar - trabajaba, vivir - vivia
+
+yo trabajaba (Pretérito imperfecto)
+
+================================
+gerundio
+
+-ar => ando
+-er => iendo
+-ir => iendo
+
+estar haciendo (be doing)
+
+yo estoy comiendo ahora (i'm eating now)
+
+yo he
+tu has
+el/ella ha
+vosotros habeis
+nosotros habemos
+Ustedes han
+Usted ha
 
 3 блока: здоровье (la salud), красота (la belleza) и (y) уход (el cuidado/mantenimiento).
 
