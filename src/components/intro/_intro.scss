@@ -1,6 +1,6 @@
 .intro {
   width: 100%;
-  padding-top: 70px;
+  // padding-top: 70px;
 
   &__wrapper {
     height: 100%;
@@ -17,14 +17,14 @@
     justify-content: flex-start;
     align-items: flex-end;
     color: $intro-text-color;
-    // font-family: "rey";
+    font-family: "rey";
     // font-family: "DaVinci Regular";
-    font-family: "MisterK Regular";
+    // font-family: "MisterK Regular";
     // font-family: "Scandal Regular";
     // font-family: "Montserrat";
-    @include mediaAll(font-size, 120px);
-    font-weight: bold;
-    line-height: 1.5;
+    @include mediaAll(font-size, 130px);
+    @include mediaAll(line-height, 290px);
+    filter: drop-shadow(1px 1px 1px white);
     z-index: 2;
   }
 
@@ -35,14 +35,35 @@
     transform: scaleX(-1);
   }
 
-  &__text {
+  &__OST-inner {
+    // position: relative;
+  }
+
+  &__OST {
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    @include mediaAll(padding, 50px);
+    align-items: flex-start;
+    @include mediaAll(padding, 300px);
     left: 0;
     top: 0;
+    filter: drop-shadow(1px 1px 10px white);
+  }
+
+  &__text {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    @include mediaAll(padding, 300px);
+    left: 0;
+    top: 0;
+    font-family: "montserrat";
+    font-weight: 500;
+    @include mediaAll(font-size, 27px);
+    @include mediaAll(line-height, 38px);
+    filter: drop-shadow(0px 0px 0px white);
   }
 }
